@@ -11,7 +11,7 @@
 | first_name               | string | null: false               |
 | last_name_kana           | string | null: false               |
 | first_name_kana          | string | null: false               |
-| user_birth_date          | integer| null: false               |
+| birth_date               | date   | null: false               |
 
 ### Association
 - has_many :items
@@ -52,7 +52,7 @@
 ### addresses テーブル
 | Column                   | Type       | Options                        |
 | ------------------------ | ---------- | ------------------------------ |
-| postal_code_id           | string     | null: false                    |
+| postal_code              | string     | null: false                    |
 | prefecture_id            | integer    | null: false                    |
 | city                     | string     | null: false                    |
 | addresses                | string     | null: false                    |
